@@ -1,3 +1,7 @@
+**~ Before I Go to *Reboot* ~** <sub><sup>by S.J.Watson</sup></sub>
+
+---
+
 # REBOOT SUPRISE !
 
 After power cycling the lab, I noticed that only the port connected to my PC lit on switch S1 and all the other connections were inactive which suggested that the other links weren’t active or that the switches lost their configurations. To start from the top checked the IP address on my PC and pinged the neighbor switch. I was able to SSH into S1 without any trouble, which was a good sign. Then i tried to ping router R1, but it didn’t respond. Checking the ARP table confirmed my suspicion as it only showed entries for my PC and S1. Clearly, the rest of the network wasn’t reachable yet.

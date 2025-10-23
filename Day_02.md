@@ -1,3 +1,7 @@
+**~ The Immortal King *Rsa* ~** <sub><sup>by Vauhini Vara</sup></sub>
+
+---
+
 # SSH
 
 ## CONFIGURATION
@@ -80,7 +84,7 @@ Still i cannot directly ssh in to R1 through its second interface (192.168.10.1)
 I suspected the problem is on **S1**, maybe a missing default route.
 So, apone checking **S1 didn’t have a default gateway configured**. Therefore, i set it manually to point to R1.
 
-`show running-config`
+`show running-config`\
 `ip default-gateway 192.168.11.1`
 
 ```
@@ -90,9 +94,11 @@ ssh -J admin@192.168.11.2 admin@192.168.11.1 <success>
 
 At this point, **only S1 is directly accessible** and **others were not**.
 
-That's when it hit me: **my PC has multiple network connections** one for the lab network, another for internet. A quick look at the routing table with `ip route` showed that **the default gateway pointed to my internet connection**, not the lab. I didn’t want to mess with that changing it could interrupt my internet access. So, I accepted the reality, that **To access R2 and S2, I’d have to proxy jump through S1**.
+That's when it hit me: **my PC has multiple network connections** one for the lab network, another for internet. A quick look at the routing table with `ip route` showed that **the default gateway pointed to my internet connection**, not the lab. I didn’t want to mess with that changing it could interrupt my internet access. So, I accepted the reality, that **To access R2 and S2, I’d have to proxy jump through S1** or ping through the interface the switch is connected to.
 
-Lessons Learned :
+> **PINGING THROUGH A SPECIFIC INTERFACE : `ping -I eth1 123.123.123.123`**
+
+> ***Lessons Learned :***
 
 * **Legacy devices require legacy crypto algorithms**: Modern SSH clients won’t talk to them unless you manually enable old algorithms.
 * **routing protocols enable reachability for remote networks**: RIP was the key to getting the devices to talk to each other.
