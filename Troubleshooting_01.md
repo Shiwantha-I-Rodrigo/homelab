@@ -4,6 +4,8 @@
 
 # REBOOT SUPRISE !
 
+**DATE : 2024/01/04**
+
 After power cycling the lab, I noticed that only the port connected to my PC lit on switch S1 and all the other connections were inactive which suggested that the other links weren’t active or that the switches lost their configurations. To start from the top checked the IP address on my PC and pinged the neighbor switch. I was able to SSH into S1 without any trouble, which was a good sign. Then i tried to ping router R1, but it didn’t respond. Checking the ARP table confirmed my suspicion as it only showed entries for my PC and S1. Clearly, the rest of the network wasn’t reachable yet.
 
 ![setup](/images/initial.png)
@@ -38,7 +40,8 @@ So, in short, some connectivity was reestablished, but end-to-end IP reachabilit
 The plan for the next day :
 1. Enable various routing protocols and observe their behaviors and additionally configure static routes so the entire network is reachable.
 
-Lessons Learned :
+> ***Lessons Learned :***
+
 1. **Always** save configs before leaving the device.
 2. SSH fingerprint must be cleared if the target device key is changed.
 3. Multiple programs might be modifying the system configurations at the same time.

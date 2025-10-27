@@ -1,5 +1,7 @@
 # SETUP
 
+**DATE : 2024/01/03**
+
 ## EQUIPMENT
 
 1. Router Cisco 1841 (64MB)

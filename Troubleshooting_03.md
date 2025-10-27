@@ -4,6 +4,8 @@
 
 # CONNECTIVITY TROUBLESHOOTING
 
+**DATE : 2024/01/16**
+
 I started the day testing connectivity in my home lab. 2 PCs sat on opposite ends of my small network, each on a different subnet. The plan was to make sure they could reach each other.
 
 | **Source** | **Destination** | **Result** | **Remarks**                       |
