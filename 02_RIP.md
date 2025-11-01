@@ -1,6 +1,7 @@
 **~ The Sorcerer of the Wilde*rip*s ~** <sub><sup>by Kai Ashante Wilson</sup></sub>
 
 ---
+
 # ROUTING INFORMATION PROTOCOL (RIP)
 
 ## SUMMARY
