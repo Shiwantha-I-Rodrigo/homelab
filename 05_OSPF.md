@@ -1,4 +1,4 @@
-**~ The *Eigrp* of the World ~** <sub><sup>by Michael Pye</sup></sub>
+**~ The *OSPF* of the World ~** <sub><sup>by Michael Pye</sup></sub>
 
 ---
 
