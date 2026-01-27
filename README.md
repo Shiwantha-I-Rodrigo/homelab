@@ -2,7 +2,7 @@
 
 ## ⚙️ **Establishing The Lab Environment**
 
-**Hardware**
+### **Hardware**
 
 + **1800 Series Routers** x 2
 + **Cisco Catalyst 2960** x 1
@@ -11,17 +11,19 @@
 
 ![lab](images/lab1.png)
 
-**Network Topography**
-
-![config](images/config1.png)
-
-**Tools**
+### **Tools**
 
 * Linux (Operating System)
 * KVM + QEMU (Virtualization Platform)
 * Wireshark (Packet Analyzer)
 * Splunk (SIEM / Log Analysis Platform)
 * rsyslog (Syslog Server)
+* Zabbix (Network Monitoring Dashboard)
+* Suricata (IPS / IDS Enforcement)
+
+### **Network Topography**
+
+![config](images/config5.png)
 
 ---
 
@@ -61,10 +63,10 @@
 
 💡 **Key Skills**
 
-* SNMP, NetFlow, sFlow, and telemetry
+* SNMP, NetFlow, sFlow and telemetry
 * Syslog collection and analysis
 * Interface monitoring (errors, utilization)
-* Alerts and dashboards (Solar Winds)
+* Alerts and dashboards (Zabbix)
 
 🎲 **Activities**
 
@@ -102,11 +104,11 @@
 * IDS/IPS basics (Suricata)
 * Log collection and SIEM (Splunk)
 * Packet capture and malware traffic analysis (Wireshark)
-* Threat hunting and mapping techniques ( MITREATTACK/ NIST CSF)
+* Threat hunting and mapping techniques ( MITRE ATT&CK/ NIST CSF)
 
 🎲 **Activities**
 
-* Send test malicious traffic through your network and observe logs
+* Send test malicious traffic through the network and observe logs
 * Configure and tune IDS/IPS rules
 * Capture and analyze suspicious packets
 * Create dashboards showing security events
