@@ -9,6 +9,12 @@
 + **Cisco Catalyst 3750 v2** x 1
 + **USB Network adapter** x 2
 
+![lab](images/lab1.png)
+
+**Network Topography**
+
+![config](images/config1.png)
+
 **Tools**
 
 * Linux (Operating System)
@@ -16,10 +22,6 @@
 * Wireshark (Packet Analyzer)
 * Splunk (SIEM / Log Analysis Platform)
 * rsyslog (Syslog Server)
-
-**Network Topography**
-
-![config](images/config1.png)
 
 ---
 
