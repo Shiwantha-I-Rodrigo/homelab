@@ -1,7 +1,3 @@
-**~ The Diver’s *DHCP* Lie Empty ~** <sub><sup>by Vendela Vida</sup></sub>
-
----
-
 # DHCP
 
 ## SUMMARY
@@ -15,7 +11,7 @@
 
 **DHCP Relay Agent** forwards DHCP packets between clients and servers (through different subnets).
 
-![dhcp](images/dhcp_relay.png)
+![dhcp](../images/dhcp_relay.png)
 
 - DHCP clients always uses the local broadcast address to send a DHCP request.
 - When a router’s interface receives a DHCP broadcast from a local subnet, it forwards the message to the DHCP server if DHCP relay is configured; otherwise, it discards it.

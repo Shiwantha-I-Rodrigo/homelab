@@ -1,7 +1,3 @@
-**~ All Systems Red ( The *ACL* Diaries ) ~** <sub><sup>by Martha Wells</sup></sub>
-
----
-
 # ACCESS CONTROL LISTS (ACL)
 
 ## SUMMARY

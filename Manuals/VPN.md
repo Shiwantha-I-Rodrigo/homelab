@@ -18,7 +18,7 @@ A VPN (Virtual Private Network) is a secure, encrypted connection that allows da
 
 ## CONFIGUARATION
 
-![vpn](images/vpn.png)
+![vpn](../images/vpn.png)
 
 > ***BGP*** : Simulates WAN routing between service providers (R1↔R2)\
 > ***GRE/IPsec Tunnel*** : Creates a secure “overlay” network over that WAN\

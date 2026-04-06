@@ -17,7 +17,7 @@ Purpose of Trunking
 
 How it Works
 
-![trunk](images/trunk.gif)
+![trunk](../images/trunk.gif)
 
 - Trunking allows VLAN information to travel across a single link by **tagging each Ethernet frame** with a VLAN identifier.
 - Trunking uses a VLAN tagging protocol ( **IEEE 802.1Q** ).

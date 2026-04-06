@@ -192,7 +192,7 @@ Violation Modes :
 ---
 ---
 
-# SPANNING TREE ROOT GUARD
+# STP ROOT GUARD
 
 - Layer 2 security feature on Cisco switches that prevents a designated port from becoming the root port.
 - Prevent allowing a superior Bridge Protocol Data Unit (BPDU) to take over as the root bridge in STP.

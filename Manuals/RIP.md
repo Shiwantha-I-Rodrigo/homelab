@@ -22,7 +22,7 @@
     * When a link goes down, a timer starts.
     * If no update is received, it is declared **invalid** and finally the route is **flushed** from the routing table.
 
-    ![rip](images/rip_timers.png)
+    ![rip](../images/rip_timers.png)
 
 - PROTOCOL TYPE
     * RIP is only aware of the "distance" (hop count) and the "vector" (next-hop router) to each destination.

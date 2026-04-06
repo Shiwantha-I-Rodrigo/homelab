@@ -1,7 +1,3 @@
-**~ *Ansible* Justice ~** <sub><sup>by Ann Leckie</sup></sub>
-
----
-
 # ANSIBLE
 
 ## SUMMARY

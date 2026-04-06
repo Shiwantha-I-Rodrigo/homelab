@@ -53,13 +53,13 @@
 
 **OSPF AREAS**
 
-![lsa](images/ospf.png)
+![lsa](../images/ospf.png)
 
 ---
 
 **LSA PROPAGATION**
 
-![lsa](images/ospf2.png)
+![lsa](../images/ospf2.png)
 
 ---
 
@@ -67,7 +67,7 @@
 
 **The Problem with OSPF --->**
 
-![lsa](images/ospf3.png)
+![lsa](../images/ospf3.png)
 
 To prevent this problem **Designated Router** system is used.\
 Selecting a single router as the Designated Router and other routers only exchanging database information with the DR, unnessasery flooding is averted.
@@ -82,11 +82,11 @@ Selecting a single router as the Designated Router and other routers only exchan
 > ⦿ -> Each router **independently** runs the DR/BDR election using data from neighbor Hello packets, but identical algorithms ensure **everyone reaches same result**.\
 > ⦿ -> Once elected, the DR retains its role until **it's** OSPF process restarts; even a new **higher-priority** router can't take over unless the current DR fails.
 
-![ospf](images/ospf_dr1.png)
+![ospf](../images/ospf_dr1.png)
 
 **Neighboring States --->**
 
-![ospf](images/ospf_states.png)
+![ospf](../images/ospf_states.png)
 
 ```
 R1# sh ip ospf neighbor
@@ -120,7 +120,7 @@ Reset both ***DR's and BDR's*** OSPF process to restart the election ---> `clear
 
 **LSA flooding process --->**
 
-![ospf](images/ospf_dr2.png)
+![ospf](../images/ospf_dr2.png)
 
 1. DROTHER routers send the LSA updates to the link-local multicast **224.0.0.6**. Only the DR and BDR listen to that multicast address.
 2. When the DR receives an update, it resends it to the link-local multicast **224.0.0.5**. All OSPF routers listen to that address
@@ -182,7 +182,7 @@ R1(config-if)# ip ospf authentication message-digest
 
 **CONFIGURATION 1**
 
-![ospf](images/ospf_lab1.png)
+![ospf](../images/ospf_lab1.png)
 
 Configure OSPF on R1
 
@@ -224,7 +224,7 @@ S2(config-router)# network 192.168.12.0 0.0.0.255 area 2
 
 **CONFIGURATION 2**
 
-![ospf](images/ospf_lab2.png)
+![ospf](../images/ospf_lab2.png)
 
 
 Configure OSPF on R1

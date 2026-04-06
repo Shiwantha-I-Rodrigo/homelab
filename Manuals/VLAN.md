@@ -16,7 +16,7 @@
     + If two VLANs shared the same IP subnet, their broadcast domains would overlap.
     + For inter Vlan routing to work properly, each VLAN must have a unique subnet.
 
-![vlan](images/vlan0.png)
+![vlan](../images/vlan0.png)
 
 ---
 
@@ -57,7 +57,7 @@ Now, VXLAN with EVPN (Ethernet VPN) is the standard.
 
 ## CONFIGURATIONS
 
-![vlan](images/vlan.png)
+![vlan](../images/vlan.png)
 
 **VLANs / TRUNKs / ROUTER-ON-A-STICK**
 
@@ -142,7 +142,7 @@ R1(config-if)# end
 
 ---
 
-![vlan](images/vlan1.png)
+![vlan](../images/vlan1.png)
 
 **Inter-VLAN Routing With a Layer3 Switch**
 

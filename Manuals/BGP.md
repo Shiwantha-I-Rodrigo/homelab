@@ -1,7 +1,3 @@
-**~ Lands of Lost Borders: Out of *BGP* on the Silk Road ~** <sub><sup>by Kate Harris</sup></sub>
-
----
-
 # BORDER GATEWAY PROTOCOL (BGP)
 
 ## SUMMARY

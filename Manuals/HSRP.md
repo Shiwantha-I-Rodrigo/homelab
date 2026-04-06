@@ -1,7 +1,3 @@
-**~ Shadow of the *HSRP* ~** <sub><sup>by Orson Scott Card</sup></sub>
-
----
-
 # HSRP (Hot Standby Router Protocol)
 
 ## SUMMARY

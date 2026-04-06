@@ -1,7 +1,3 @@
-**~ The *Eigrp* of the World ~** <sub><sup>by Michael Pye</sup></sub>
-
----
-
 # ENHANCED INTERIOR GATEWAY ROUTING PROTOCOL (EIGRP)
 
 ## SUMMARY

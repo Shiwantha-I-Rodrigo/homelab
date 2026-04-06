@@ -4,7 +4,7 @@
 
 # KVM SETUP
 
-![kvm](images/vm.png)
+![kvm](../images/vm.png)
 
 ---
 

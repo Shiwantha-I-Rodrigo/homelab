@@ -1,7 +1,3 @@
-**~ Guild of *DNS* ~** <sub><sup>by Jon Cronshaw</sup></sub>
-
----
-
 # DNS
 
 ## SUMMARY
