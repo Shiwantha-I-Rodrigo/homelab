@@ -110,8 +110,8 @@ Violation Modes :
 - ARP (Address Resolution Protocol) is trust-based. any device can send an ARP reply saying, **“Hey, IP 10.0.0.1 is at MAC aa:bb:cc:dd:ee:ff”**.
 - DAI intercepts and validates all ARP packets on untrusted ports.
 - It compares the MAC and IP addresses in the ARP packet against the DHCP Snooping binding table ( trusted IP–MAC pairs learned from DHCP ).
-    + If the ARP info matches the DHCP Snooping database → packet is forwarded.
-    + If it doesn’t match → packet is dropped, and a log entry is generated.
+    + If the ARP info matches the DHCP Snooping database -> packet is forwarded.
+    + If it doesn’t match -> packet is dropped, and a log entry is generated.
 - DAI depends on DHCP Snooping being enabled first.
 
 ## CONFIGUARATION

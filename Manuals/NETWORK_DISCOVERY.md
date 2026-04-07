@@ -77,10 +77,10 @@
 | Use Case                              | Example Command                                                                    |
 | ------------------------------------- | ---------------------------------------------------------------------------------- |
 | Resolve domain to IP                  | `nslookup google.com`                                                              |
-| Reverse lookup (IP → domain)          | `nslookup 8.8.8.8`                                                                 |
+| Reverse lookup (IP -> domain)          | `nslookup 8.8.8.8`                                                                 |
 | Use specific DNS server               | `nslookup google.com 8.8.8.8`                                                      |
 | Query specific record type            | `nslookup -type=MX example.com` (mail servers)<br>`nslookup -type=TXT example.com` |
-| Interactive mode for multiple queries | `nslookup` → then type domains                                                     |
+| Interactive mode for multiple queries | `nslookup` -> then type domains                                                     |
 
 | Option           | Explanation                                                  |
 | ---------------- | ------------------------------------------------------------ |

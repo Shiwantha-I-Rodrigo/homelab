@@ -18,13 +18,13 @@
 
 | Record Type | Meaning | Example |
 | - | - | - |
-| **A**       | Maps domain → IPv4 address              | `example.com → 93.184.216.34`|
-| **AAAA**    | Maps domain → IPv6 address              | `example.com → 2606:2800:220:1:248:1893:25c8:1946`|
-| **CNAME**   | Alias (canonical name) → another domain | `www.example.com → example.com`|
-| **MX**      | Mail exchange (for email servers)       | `example.com → mail.example.com`|
+| **A**       | Maps domain -> IPv4 address              | `example.com -> 93.184.216.34`|
+| **AAAA**    | Maps domain -> IPv6 address              | `example.com -> 2606:2800:220:1:248:1893:25c8:1946`|
+| **CNAME**   | Alias (canonical name) -> another domain | `www.example.com -> example.com`|
+| **MX**      | Mail exchange (for email servers)       | `example.com -> mail.example.com`|
 | **TXT**     | Text data (for verification, SPF, etc.) | `v=spf1 include:_spf.google.com ~all`|
 | **NS**      | Name server for the domain              | `ns1.example.com`|
-| **PTR**     | Reverse lookup (IP → domain)            | `93.184.216.34 → example.com`|
+| **PTR**     | Reverse lookup (IP -> domain)            | `93.184.216.34 -> example.com`|
 
 **DNS SERVERS**
 
@@ -35,17 +35,17 @@ Handle caching, recursion, forwarding, zone transfers, and high-availability ope
 | **Query Processor**        | Parses incoming DNS queries and decides how to handle them (cache lookup, forwarder, authoritative answer, recursion).|
 | **Cache / Resolver Cache** | Stores recently resolved records (A, AAAA, MX, etc.) with their TTLs to speed up subsequent lookups.|
 | **Authoritative Engine**   | Responds with authoritative answers for domains the server owns (zones it’s configured to serve).|
-| **Recursive Resolver**     | If not authoritative, recursively queries other DNS servers (root → TLD → authoritative).|
+| **Recursive Resolver**     | If not authoritative, recursively queries other DNS servers (root -> TLD -> authoritative).|
 | **Zone Management**        | Handles zone files, AXFR/IXFR transfers, DNSSEC signing, and updates.|
 | **Network I/O Engine**     | Manages UDP/TCP sockets, DNS-over-TLS (DoT), DNS-over-HTTPS (DoH), rate limiting, and query queueing.|
 
 Query Process -->
 
-1. Receive query → UDP or TCP port 53 (or HTTPS/TLS for DoH/DoT).
-2. Check cache → If the record is cached and TTL valid, respond immediately.
-3. Authoritative check → If the server is authoritative for that zone, answer directly.
-4. Recursion / Forwarding → If not, recursively query upstream servers (root → TLD → authoritative) or use a configured forwarder.
-5. Response assembly → Add EDNS options, DNSSEC signatures if needed.
+1. Receive query -> UDP or TCP port 53 (or HTTPS/TLS for DoH/DoT).
+2. Check cache -> If the record is cached and TTL valid, respond immediately.
+3. Authoritative check -> If the server is authoritative for that zone, answer directly.
+4. Recursion / Forwarding -> If not, recursively query upstream servers (root -> TLD -> authoritative) or use a configured forwarder.
+5. Response assembly -> Add EDNS options, DNSSEC signatures if needed.
 6. Send response and update cache.
 
 DNS Load Balancing Modes -->

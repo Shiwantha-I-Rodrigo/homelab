@@ -114,8 +114,8 @@ but the 4 addresses can be summarized into 2 summarized addresses :
 - **Outbound** packets are processed by an ACL **after** being routed.
 - Unlike subnet mask, wildcard mask **allow non-contiguous bits** in the mask.
     + `access-list 10 permit 192.168.1.0 0.0.3.255` ( matches 192.168.1.0 - 192.168.4.255 ).
-    + **0** → must match exactly.
-    + **1** → simply ignore.
+    + **0** -> must match exactly.
+    + **1** -> simply ignore.
 - A "defined but empty" ACL allows all traffic, ! As soon as you add one statement the implicit **“deny all”** rule at the end becomes **active**.
 
 ---

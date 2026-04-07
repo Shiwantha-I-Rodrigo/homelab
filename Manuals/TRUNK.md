@@ -7,8 +7,8 @@
 ## SUMMARY
 
 Ethernet trunking (also called 802.1Q trunking) is a way to allow multiple VLANs to be carried over a single physical link
-- Access port → belongs to only one VLAN.
-- Trunk port → carries traffic for multiple VLANs.
+- Access port -> belongs to only one VLAN.
+- Trunk port -> carries traffic for multiple VLANs.
 
 Purpose of Trunking
 - Reduces the number of physical links between switches.

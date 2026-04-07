@@ -87,7 +87,7 @@ sudo cdpr -d enp0s3
 
 ## **Step 7: Create a Visual Network Map**
 
-`nmap -oX scan.xml` → import into **Zenmap** GUI for network maps
+`nmap -oX scan.xml` -> import into **Zenmap** GUI for network maps
 
 ```
 sudo nmap -sn -oX network_scan.xml 192.168.1.0/24
@@ -184,9 +184,9 @@ sudo ./network_map.sh
 ```
 
 --> outputs
-- live_hosts.txt → All discovered live hosts
-- mac_table.txt → MAC addresses of live hosts
-- nmap_scan.txt → Open ports and services
-- lldp_neighbors.txt → LLDP neighbor info
-- cdpr_neighbors.txt → CDP neighbor info
-- network_map.txt → Complete consolidated network map
+- live_hosts.txt -> All discovered live hosts
+- mac_table.txt -> MAC addresses of live hosts
+- nmap_scan.txt -> Open ports and services
+- lldp_neighbors.txt -> LLDP neighbor info
+- cdpr_neighbors.txt -> CDP neighbor info
+- network_map.txt -> Complete consolidated network map

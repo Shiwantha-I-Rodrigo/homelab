@@ -18,8 +18,6 @@ S1(config-line)# end
 S1(config)#ip ssh version 2
 ```
 
-> Use similar config for all 4 devices S1,R1,R2,S2 !
-
 **LIMIT ACCESS TO A SPECIFIC SUBNET**
 
 ```
