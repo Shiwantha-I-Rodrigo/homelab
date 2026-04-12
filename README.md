@@ -26,17 +26,6 @@
 
 ![lab](images/seclab.png)
 
-|Network Segment|Subnet|
-|-|-|
-| Attacker <-> Firewall | 192.168.0.0/24 |
-| Firewall <-> C-1841   | 192.168.1.0/24 |
-| C-1841 <-> C-3750     | 192.168.2.0/24 |
-| C-3750 <-> C-1841     | 192.168.3.0/24 |
-| C-1841 <-> Endpoint-1 | 192.168.4.0/24 |
-| C-1841 <-> Endpoint-2 | 192.168.5.0/24 |
-
-![lab](images/seclab_layer3.png)
-
 ---
 
 # Networking_Fundamentals
@@ -308,7 +297,7 @@
 
 ---
 
-# Wireless_Networking**
+# Wireless_Networking
 
 * RF_basics
 * WLAN_security

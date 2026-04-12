@@ -170,3 +170,18 @@ nmcli connection up eth0
 ```
 nmcli general hostname server01
 ```
+
+**Using USB Adapters**
+
+> **IP address resetting constantly**\
+> NetworkManager may treat USB interfaces as dynamic or if the hardware briefly disconnects (miliseconds) and reconnects, NetworkManager sees a "new" connection, it falls back to its default behavior (DHCP) unless the profile is strictly locked down.
+
+```
+# Set static IP, set manual mode and ensure it auto-connects
+sudo nmcli connection modify "Wired connection 2" ipv4.addresses "192.168.11.3/24" ipv4.method manual connection.autoconnect yes
+sudo nmcli connection modify "Wired connection 3" ipv4.addresses "192.168.12.4/24" ipv4.method manual connection.autoconnect yes
+
+# Apply the changes immediately
+sudo nmcli connection up "Wired connection 2"
+sudo nmcli connection up "Wired connection 3"
+```
